@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0e0e0e;
+  color: #fff;
+}
+
+/* HEADER */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #ffb300;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+nav .btn {
+  padding: 6px 12px;
+  background: #000;
+  color: #fff;
+  border-radius: 4px;
+}
+
+nav .daftar {
+  background: red;
+}
+
+/* BANNER */
+.banner {
+  background: linear-gradient(120deg, #1c1c1c, #000);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.banner h1 {
+  color: #ffb300;
+}
+
+/* GAME GRID */
+.games {
+  padding: 40px 20px;
+}
+
+.games h2 {
+  margin-bottom: 20px;
+  color: #ffb300;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: #1a1a1a;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+.card:hover {
+  border-color: #ffb300;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #000;
+  color: #777;
+}
