@@ -1,4 +1,4 @@
-/* Global */
+/* GLOBAL */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,75 +6,88 @@ body {
   color: #fff;
 }
 
-/* Topbar */
+/* TOPBAR */
 .topbar {
   display: flex;
   justify-content: space-between;
-  padding: 8px 20px;
+  padding: 5px 20px;
   font-size: 12px;
   background: #111;
 }
 
+.topbar .social span {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
 .auth-buttons button {
   margin-left: 8px;
-  padding: 4px 10px;
+  padding: 4px 12px;
   font-weight: bold;
+  border: none;
+  cursor: pointer;
 }
 
 .login {
-  background: #222;
+  background: #009944;
   color: #fff;
-  border: 1px solid #555;
+  border-radius: 4px;
 }
 
 .daftar {
   background: #ffb300;
-  border: none;
+  color: #000;
+  border-radius: 4px;
 }
 
-/* Navbar */
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #1c1c1c;
+  background: #1a1a1a;
   padding: 12px 20px;
 }
 
-.navbar .logo {
-  font-size: 24px;
+.logo {
+  font-size: 26px;
   font-weight: bold;
   color: #ffb300;
 }
 
-.navbar .menu a {
+.menu a {
   margin-left: 20px;
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+  font-size: 14px;
 }
 
-/* Banner */
+/* BANNER */
 .banner img {
   width: 100%;
   display: block;
   margin: 10px 0;
 }
 
-/* Providers */
+/* PROVIDER BAR */
 .providers {
   background: #111;
   padding: 15px 0;
-  text-align: center;
+}
+
+.providers .provider-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .providers img {
-  margin: 0 10px;
-  height: 50px;
-  vertical-align: middle;
+  height: 40px;
 }
 
-/* Games Grid */
+/* GAMES GRID */
 .games {
   padding: 20px;
 }
@@ -104,7 +117,7 @@ body {
   border-color: #ffb300;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
   background: #000;
   text-align: center;
