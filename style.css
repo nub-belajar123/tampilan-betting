@@ -1,71 +1,96 @@
+/* Global */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0e0e0e;
+  background: #0b0b0b;
   color: #fff;
 }
 
-/* HEADER */
+/* Topbar */
 .topbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 12px 20px;
-  background: #ffb300;
+  padding: 8px 20px;
+  font-size: 12px;
+  background: #111;
 }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-  color: #000;
-}
-
-nav a {
-  margin-left: 15px;
-  text-decoration: none;
-  color: #000;
+.auth-buttons button {
+  margin-left: 8px;
+  padding: 4px 10px;
   font-weight: bold;
 }
 
-nav .btn {
-  padding: 6px 12px;
-  background: #000;
+.login {
+  background: #222;
   color: #fff;
-  border-radius: 4px;
+  border: 1px solid #555;
 }
 
-nav .daftar {
-  background: red;
+.daftar {
+  background: #ffb300;
+  border: none;
 }
 
-/* BANNER */
-.banner {
-  background: linear-gradient(120deg, #1c1c1c, #000);
-  padding: 80px 20px;
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1c1c1c;
+  padding: 12px 20px;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffb300;
+}
+
+.navbar .menu a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Banner */
+.banner img {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+}
+
+/* Providers */
+.providers {
+  background: #111;
+  padding: 15px 0;
   text-align: center;
 }
 
-.banner h1 {
-  color: #ffb300;
+.providers img {
+  margin: 0 10px;
+  height: 50px;
+  vertical-align: middle;
 }
 
-/* GAME GRID */
+/* Games Grid */
 .games {
-  padding: 40px 20px;
+  padding: 20px;
 }
 
 .games h2 {
-  margin-bottom: 20px;
   color: #ffb300;
+  margin-bottom: 15px;
 }
 
-.grid {
+.game-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
 }
 
-.card {
+.game-card {
   background: #1a1a1a;
   height: 120px;
   display: flex;
@@ -75,14 +100,14 @@ nav .daftar {
   cursor: pointer;
 }
 
-.card:hover {
+.game-card:hover {
   border-color: #ffb300;
 }
 
-/* FOOTER */
+/* Footer */
 footer {
+  background: #000;
   text-align: center;
   padding: 15px;
-  background: #000;
   color: #777;
 }
